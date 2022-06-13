@@ -1,0 +1,23 @@
+.control-panel {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.control-block {
+    margin-right: 1rem;
+    padding: 4px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+.rocket-space {
+    position: relative;
+    border: 2px solid grey;
+    height: 400px;
+    width: 600px;
+}
+.rocket {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    rotate: 45deg;
+}

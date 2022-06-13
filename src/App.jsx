@@ -1,3 +1,4 @@
+import Asteroids from './components/Asteroids/Asteroids';
 import CounterClass from './components/CounterClass/CounterClass';
 import CounterFunc from './components/CounterFunc/CounterFunc';
 import RestHeader from './components/RestHeader/RestHeader';
@@ -45,6 +46,7 @@ function App() {
         <CounterClass />
         <hr className='mt-5 pt-5' />
       </div>
+      <Asteroids />
     </>
   );
 }
