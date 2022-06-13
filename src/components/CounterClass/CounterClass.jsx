@@ -1,15 +1,23 @@
 import React, { Component } from 'react'
 
 export class CounterClass extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
-      counter: 0
+      counter: this.props.valorInicial,
     };
+  }
+  incrementar = () => {
+    // this.state.counter++;
+    this.setState({ counter: this.state.counter + 1 })
+    console.log(this.state.counter)
   }
   render() {
     return (
-      <div>CounterClass</div>
+      <div>
+        Counter: {this.state.counter}
+        <button onClick={this.incrementar}>Incrementar</button>
+      </div>
     )
   }
 }
